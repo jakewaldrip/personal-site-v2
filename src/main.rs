@@ -1,12 +1,38 @@
 #[macro_use]
 extern crate rocket;
 
+use rocket::{
+    Request,
+    fs::{FileServer, Options},
+};
+use rocket_dyn_templates::{Template, context};
+
 #[get("/")]
-fn index() -> &'static str {
-    "Hello, world!"
+fn index() -> Template {
+    Template::render(
+        "index",
+        context! {
+            title: "Hello",
+            name: "Jacob"
+        },
+    )
+}
+
+#[catch(404)]
+fn not_found(req: &Request<'_>) -> Template {
+    Template::render(
+        "errors/404",
+        context! {
+            uri: req.uri()
+        },
+    )
 }
 
 #[launch]
 fn rocket() -> _ {
-    rocket::build().mount("/", routes![index])
+    rocket::build()
+        .mount("/", routes![index])
+        .mount("/", FileServer::new("static", Options::None))
+        .register("/", catchers![not_found])
+        .attach(Template::fairing())
 }

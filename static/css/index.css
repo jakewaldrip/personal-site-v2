@@ -1,0 +1,21 @@
+.mainContainer {
+  max-width: 1200px;        /* Keeps content from stretching too wide */
+  margin: 0 auto;           /* Centers the container horizontally */
+  padding: 1rem 2rem;       /* Adds space inside the container */
+  background-color: #ffffff; /* Light background, change as needed */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border-radius: 8px;       /* Slightly rounded corners */
+  box-sizing: border-box;  /* Ensures padding doesn’t increase width */
+  min-height: 100vh;        /* Optional: ensures container fills screen */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Ensures mobile scaling */
+@media (max-width: 768px) {
+  .main-container {
+    padding: 1rem;
+    border-radius: 0;       /* Flat edges on smaller screens */
+    box-shadow: none;
+  }
+}
