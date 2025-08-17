@@ -1,4 +1,4 @@
-.mainContainer {
+.heroContainer{
   max-width: 1200px;        /* Keeps content from stretching too wide */
   margin: 0 auto;           /* Centers the container horizontally */
   padding: 1rem 2rem;       /* Adds space inside the container */
@@ -13,7 +13,7 @@
 
 /* Ensures mobile scaling */
 @media (max-width: 768px) {
-  .main-container {
+  .heroContainer{
     padding: 1rem;
     border-radius: 0;       /* Flat edges on smaller screens */
     box-shadow: none;
