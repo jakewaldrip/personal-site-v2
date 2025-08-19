@@ -12,7 +12,6 @@ fn index() -> Template {
     Template::render(
         "index",
         context! {
-            title: "Hello",
             name: "Jacob"
         },
     )

@@ -1,21 +1,79 @@
-.heroContainer{
-  max-width: 1200px;        /* Keeps content from stretching too wide */
-  margin: 0 auto;           /* Centers the container horizontally */
-  padding: 1rem 2rem;       /* Adds space inside the container */
-  background-color: #ffffff; /* Light background, change as needed */
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  border-radius: 8px;       /* Slightly rounded corners */
-  box-sizing: border-box;  /* Ensures padding doesn’t increase width */
-  min-height: 100vh;        /* Optional: ensures container fills screen */
-  display: flex;
-  flex-direction: column;
+:root {
+  --primary-background-color: #ffffff;
+  --primary-off-background-color: #f8f9fb;
+  --primary-main-text-color: #4c566a;
+  --primary-button-hover-color: #79b8ca;
+  --primary-button-border-color: #4c566a;
+
+  --divider-color: rgba(216, 222, 233, 0.8);
+
+  --secondary-background-color: #2e3440;
+  --secondary-off-background-color: #3b4252;
+  --secondary-main-text-color: #eceff4;
+  --secondary-off-text-color: #d8dee9;
+  --secondary-button-hover-color: #79b8ca;
 }
 
-/* Ensures mobile scaling */
-@media (max-width: 768px) {
-  .heroContainer{
-    padding: 1rem;
-    border-radius: 0;       /* Flat edges on smaller screens */
-    box-shadow: none;
-  }
+[data-theme="dark"] {
+  --primary-background-color: #2e3440;
+  --primary-off-background-color: #3b4252;
+  --primary-main-text-color: #eceff4;
+  --primary-off-text-color: #d8dee9;
+  --primary-button-hover-color: #79b8ca;
+
+  --divider-color: rgba(216, 222, 233, 0.8);
+
+  --secondary-background-color: #ffffff;
+  --secondary-off-background-color: #f8f9fb;
+  --secondary-main-text-color: #4c566a;
+  --secondary-button-hover-color: #79b8ca;
+  --secondary-button-border-color: #4c566a;
+}
+
+body {
+  background-color: var(--primary-background-color);
+  color: var(--primary-main-text-color);
+}
+
+.navBarContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 12px 24px;
+}
+
+.navBarLinksContainer {
+  display: flex;
+  gap: 84px;
+}
+
+
+.navBarLinksContainer a {
+  text-decoration: none;
+  font-size: 22px;
+}
+
+.navBarLinksContainer a:visited {
+  text-decoration: none;
+  color: var(--primary-main-text-color);
+}
+
+.navBarThemeContainer {
+  position: absolute;
+  right: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.navBarToggleDarkMode {
+  fill: var(--primary-main-text-color);
+}
+
+.heroContainer {
+
+}
+
+.aboutMeContainer {
+
 }
