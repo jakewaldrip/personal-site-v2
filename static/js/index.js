@@ -13,3 +13,18 @@ document.getElementById('toggle-theme').addEventListener('click', () => {
   document.documentElement.setAttribute('data-theme', newTheme);
   localStorage.setItem('theme', newTheme);
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const links = document.querySelectorAll("#navbar-links a");
+  const currentPath = window.location.pathname;
+
+  // TODO make this dynamic, blegh
+  for (let i = 0; i < 3; ++i) {
+    const link = links[i];
+    const url = new URL(link.href).pathname;
+
+    if (url === currentPath) {
+      link.classList.add("active-link");
+    }
+  }
+});

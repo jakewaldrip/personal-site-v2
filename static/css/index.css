@@ -5,7 +5,7 @@
   --primary-button-hover-color: #79b8ca;
   --primary-button-border-color: #4c566a;
 
-  --divider-color: rgba(216, 222, 233, 0.8);
+  --divider-color: rgba(216, 222, 233, 1);
 
   --secondary-background-color: #2e3440;
   --secondary-off-background-color: #3b4252;
@@ -21,7 +21,7 @@
   --primary-off-text-color: #d8dee9;
   --primary-button-hover-color: #79b8ca;
 
-  --divider-color: rgba(216, 222, 233, 0.8);
+  --divider-color: rgba(216, 222, 233, 0.6);
 
   --secondary-background-color: #ffffff;
   --secondary-off-background-color: #f8f9fb;
@@ -58,16 +58,34 @@ body {
   color: var(--primary-main-text-color);
 }
 
+.navBarLinksContainer a.active-link {
+  border-bottom: 2px solid var(--divider-color);
+  padding-bottom: 4px;
+}
+
 .navBarThemeContainer {
   position: absolute;
   right: 24px;
-  top: 50%;
+  top: 40%;
   transform: translateY(-50%);
   cursor: pointer;
 }
 
 .navBarToggleDarkMode {
   fill: var(--primary-main-text-color);
+}
+
+.navBarDivider {
+  margin-top: 16px;
+  height: 2px;
+  width: 90%;
+  background-color: var(--divider-color);
+}
+
+.navBarContentWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .heroContainer {
