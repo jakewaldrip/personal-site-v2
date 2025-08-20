@@ -27,4 +27,9 @@ document.addEventListener("DOMContentLoaded", function () {
       link.classList.add("active-link");
     }
   }
+
+  // Add animations after content is loaded
+  setTimeout(() => {
+    document.body.classList.add('theme-transition');
+  }, 100);
 });
