@@ -1,0 +1,59 @@
+.navBarContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 12px 24px;
+}
+
+.navBarLinksContainer {
+  display: flex;
+  gap: 84px;
+}
+
+
+.navBarLinksContainer a {
+  padding-top: 4px;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+.navBarLinksContainer a:visited {
+  text-decoration: none;
+  color: var(--primary-main-text-color);
+}
+
+.navBarLinksContainer a:hover{
+  color: var(--text-hover-color);
+  transition: border 0.5s ease;
+  border-top: 2px solid var(--divider-color);
+}
+
+.navBarLinksContainer a.active-link {
+  border-top: 2px solid var(--divider-color);
+}
+
+.navBarThemeContainer {
+  position: absolute;
+  right: 24px;
+  top: 40%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.navBarToggleDarkMode {
+  fill: var(--primary-main-text-color);
+}
+
+.navBarDivider {
+  margin-top: 16px;
+  height: 2px;
+  width: 90%;
+  background-color: var(--divider-color);
+}
+
+.navBarContentWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
