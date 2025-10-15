@@ -14,7 +14,7 @@ document.getElementById('toggle-theme').addEventListener('click', () => {
   localStorage.setItem('theme', newTheme);
 });
 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function() {
   const links = document.querySelectorAll("#navbar-links a");
   const currentPath = window.location.pathname;
 

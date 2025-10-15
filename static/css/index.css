@@ -1,7 +1,96 @@
 .heroContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
+  padding-top: 48px;
+  padding-bottom: 0px;
+}
+
+.heroTitle {
+  font-size: 48px;
+}
+
+.heroButtonContainer {
+  display: flex;
+  gap: 32px;
+}
+
+.primaryButton {
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  border: none;
+  border-radius: 0.25em;
+  background: none;
+  padding: 0.375em 0.75em;
+  user-select: none;
+  line-height: 1.15;
+  color: var(--primary-button-text-color);
+
+  background-color: var(--primary-button-color);
+  font-size: 1.375em;
+  margin: 0.4em 0 0.25em;
+}
+
+.primaryButton:hover {
+  background-color: var(--primary-button-hover-color);
+  cursor: pointer;
+}
+
+.secondaryButton {
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  border-radius: 0.25em;
+  border: 0.0625em solid var(--secondary-button-border-color);
+  background: none;
+  padding: 0.375em 0.75em;
+  user-select: none;
+  line-height: 1.15;
+  color: var(--primary-main-text-color);
+  transition:
+    color 400ms ease-in-out;
+
+  font-size: 1.375em;
+  margin: 0.4em 0 0.25em;
+}
+
+.secondaryButton:hover {
+  color: var(--secondary-button-hover-color);
+  border: 0.0625em solid var(--secondary-button-hover-color);
+  cursor: pointer;
+}
+
+.heroDivider {
+  fill: var(--primary-off-background-color);
+  transition: fill 400ms ease-in-out;
+  display: block;
+  bottom: -1px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  background-color: transparent;
+  pointer-events: none;
+  user-select: none;
+  vertical-align: middle;
+  overflow: hidden;
+  padding-top: 96px;
 }
 
 .aboutMeContainer {
-
+  background-color: var(--primary-off-background-color);
+  flex: 1;
+  transition:
+    background-color 400ms ease-in-out,
+    color 400ms ease-in-out,
+    border-color 400ms ease-in-out;
 }
+
