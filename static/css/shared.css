@@ -20,7 +20,8 @@
 
 [data-theme="dark"] {
   --primary-background-color: #2e3440;
-  --primary-off-background-color: #3b4252;
+  /* --primary-background-color: #3b4252; */
+  --primary-off-background-color: #292e39;
   --primary-main-text-color: #eceff4;
   --primary-off-text-color: #d8dee9;
   --primary-button-hover-color: #79b8ca;

@@ -1,3 +1,152 @@
-.projectsContainer {
+.heroContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
+  padding-top: 64px;
+  padding-bottom: 0px;
 }
+
+.heroTitle {
+  font-size: 2em;
+}
+
+.heroDesc {
+  font-size: 1.26562em;
+  width: 60%;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+.heroDivider {
+  fill: var(--primary-off-background-color);
+  transition: fill 400ms ease-in-out;
+  display: block;
+  bottom: -1px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  background-color: transparent;
+  pointer-events: none;
+  user-select: none;
+  vertical-align: middle;
+  overflow: hidden;
+  padding-top: 96px;
+}
+
+.projectOneSection {
+  background-color: var(--primary-off-background-color);
+  flex: 1;
+  transition:
+    background-color 400ms ease-in-out,
+    color 400ms ease-in-out,
+    border-color 400ms ease-in-out;
+  justify-content: center;
+  display: flex;
+  align-items: flex-start;
+}
+
+.projectContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 90%;
+  gap: 64px;
+  max-width: 1200px;
+}
+
+.projectTextContainer {
+  max-width: 50%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.projectTitle {
+  font-size: 2em;
+}
+
+.projectDesc {
+  font-size: 1.26562em;
+  line-height: 1.5em;
+}
+
+.projectArtifactContainer {
+  width: 50%;
+  height: 360px;
+  max-width: 800px;
+}
+
+.artifactDisplayBox {
+  width: 100%;
+  box-shadow: rgba(15, 17, 21, 0.35) 0px 6px 9px 0px;
+  background-color: var(--primary-off-background-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.artifactHeader {
+  background-color: var(--primary-background-color);
+  width: 100%;
+  padding: 0;
+  height: 10%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fileName {
+  font-size: 1.26562em;
+  color: var(--primary-off-text-color);
+}
+
+.artifactContent {
+  font-family: monospace;
+  overflow-x: auto;
+}
+
+pre code {
+  font-size: 1.26562em;
+  color: var(--primary-off-text-color);
+}
+
+pre {
+  padding-left: 24px;
+}
+
+.secondaryButton {
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  border-radius: 0.25em;
+  border: 0.0625em solid var(--secondary-button-border-color);
+  background: none;
+  padding: 0.375em 0.75em;
+  user-select: none;
+  line-height: 1.15;
+  color: var(--primary-main-text-color);
+  transition:
+    color 400ms ease-in-out;
+
+  font-size: 1.375em;
+  margin: 0.4em 0 0.25em;
+  width: fit-content;
+}
+
+.secondaryButton:hover {
+  color: var(--secondary-button-hover-color);
+  border: 0.0625em solid var(--secondary-button-hover-color);
+  cursor: pointer;
+}
+

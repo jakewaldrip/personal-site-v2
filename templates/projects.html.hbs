@@ -1,7 +1,54 @@
 {{#*inline "page"}}
 
-<section class="projectsContainer" id="projectsSection">
-    <h1>Projects</h1>
+<section class="heroContainer" id="projectsSection">
+    <h1 class="heroTitle">stuff i like building.</h1>
+    <p class="heroDesc">
+      a small collection of my favorite projects that I've been working on lately
+      <br>
+      not to be confused with "stuff i get paid to build" (those aren't as fun)
+    </p>
+
+  <svg class="heroDivider" viewBox="0 0 1440 120">
+    <path d="M1440 21.21V120H0V21.21C120 35.07 240 42 360 42s240-6.93 360-20.79c88.328-8.794 154.574-14.333 198.738-16.618A3120.562 3120.562 0 0 1 1080 .42c120 0 240 6.93 360 20.79z"></path>
+  </svg>
+
+</section>
+
+<section class="projectOneSection" id="projectOneSection">
+  <div class="projectContainer">
+
+    <div class="projectTextContainer">
+      <h1 class="projectTitle">vimscape2007.nvim</h1>
+      <p class="projectDesc">
+        a plugin intended to bring the spirit of old school runescape into neovim. powered by a blazingly fast Rust backend, batches of your vim keystrokes are processed in the blink of an eye - granting you experience and levels corresponding to different categories of vim motions to track your progress and impress your friends.
+      </p>
+      <a class="secondaryButton">Learn More</a>
+    </div>
+
+    <div class="projectArtifactContainer">
+      <div class="artifactDisplayBox">
+        <div class="artifactHeader">
+          <p class="fileName">
+          lexer.rs
+          </p>
+        </div>
+        <p class="artifactContent">
+          <pre><code>
+impl<'a> Lexer<'a> {
+    pub fn new(input: &'a str) -> Self {
+        let chars = input.chars().peekable();
+        Self {
+            input: chars,
+            state: State::None,
+            accumulated_string: String::new(),
+        }
+    }
+}
+          </code></pre>
+        </p>
+      <div>
+    </div>
+  </div>
 </section>
 
 {{/inline}}
