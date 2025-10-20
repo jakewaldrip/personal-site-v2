@@ -16,7 +16,6 @@
 
 <section class="projectOneSection" id="projectOneSection">
   <div class="projectContainer">
-
     <div class="projectTextContainer">
       <h1 class="projectTitle">vimscape2007.nvim</h1>
       <p class="projectDesc">
@@ -46,10 +45,102 @@ impl<'a> Lexer<'a> {
 }
           </code></pre>
         </p>
-      <div>
+      </div>
     </div>
   </div>
+
+  <svg class="projectOneDivider" viewBox="0 0 1920 240">
+    <path d="M0 0c62.028 23.301 207.726 31.062 355.345 10.956 194.93-26.548 329.274 58.551 412.36 95.275 113.991 50.379 161.026 36.177 242.491 47.604 81.464 11.428 80.28 30.32 167.409 35.339 99.802 5.746 258.527-51.115 385.457-10.565 156.954 50.136 300.814-6.06 356.938 1.225V240H0V0z"></path>
+  </svg>
+
 </section>
+
+<section class="projectTwoSection" id="projectTwoSection">
+  <div class="projectContainer">
+
+    <div class="projectArtifactContainer">
+      <div class="artifactDisplayBox">
+        <div class="artifactHeader">
+          <p class="fileName">
+          lexer.rs
+          </p>
+        </div>
+        <p class="artifactContent">
+          <pre><code>
+impl<'a> Lexer<'a> {
+    pub fn new(input: &'a str) -> Self {
+        let chars = input.chars().peekable();
+        Self {
+            input: chars,
+            state: State::None,
+            accumulated_string: String::new(),
+        }
+    }
+}
+          </code></pre>
+        </p>
+      </div>
+    </div>
+
+    <div class="projectTextContainer">
+      <h1 class="projectTitle">kung-fu-screeps</h1>
+      <p class="projectDesc">
+        a plugin intended to bring the spirit of old school runescape into neovim. powered by a blazingly fast Rust backend, batches of your vim keystrokes are processed in the blink of an eye - granting you experience and levels corresponding to different categories of vim motions to track your progress and impress your friends.
+      </p>
+      <a class="secondaryButton">Learn More</a>
+    </div>
+
+  </div>
+
+  <svg class="projectTwoDivider" viewBox="0 0 1440 47">
+    <path d="M0 .058c117.505 18.386 269.602 22.114 456.294 11.185C562.076 5.051 730.784.911 885.297 3.273 1157.177 7.432 1386.981 21.329 1440 38.39v8.55H0V.058z"></path>
+  </svg>
+</section>
+
+<section class="projectThreeSection" id="projectThreeSection">
+  <div class="projectContainer">
+
+    <div class="projectTextContainer">
+      <h1 class="projectTitle">early-bird-enforcer</h1>
+      <p class="projectDesc">
+        a plugin intended to bring the spirit of old school runescape into neovim. powered by a blazingly fast Rust backend, batches of your vim keystrokes are processed in the blink of an eye - granting you experience and levels corresponding to different categories of vim motions to track your progress and impress your friends.
+      </p>
+      <a class="secondaryButton">Learn More</a>
+    </div>
+
+    <div class="projectArtifactContainer">
+      <div class="artifactDisplayBox">
+        <div class="artifactHeader">
+          <p class="fileName">
+          lexer.rs
+          </p>
+        </div>
+        <p class="artifactContent">
+          <pre><code>
+impl<'a> Lexer<'a> {
+    pub fn new(input: &'a str) -> Self {
+        let chars = input.chars().peekable();
+        Self {
+            input: chars,
+            state: State::None,
+            accumulated_string: String::new(),
+        }
+    }
+}
+          </code></pre>
+        </p>
+      </div>
+    </div>
+  </div>
+
+<svg viewBox="0 0 1920 250" xmlns="http://www.w3.org/2000/svg" class="projectThreeDivider">
+    <path d="M1920 250H0V0s126.707 78.536 349.975 80.05c177.852 1.203 362.805-63.874 553.803-63.874 290.517 0 383.458 57.712 603.992 61.408 220.527 3.696 278.059-61.408 412.23-17.239" class="waveFooterOne"></path>
+    <path d="M1920 144s-467.917 116.857-1027.243-17.294C369.986 1.322 0 45.578 0 45.578V250h1920V144z" class="waveFooterTwo"></path>
+    <path d="M0 195.553s208.547-75.581 701.325-20.768c376.707 41.908 520.834-67.962 722.545-67.962 222.926 0 311.553 83.523 496.129 86.394V250H0v-54.447z" class="waveFooterThree"></path>
+  </svg>
+</section>
+
+
 
 {{/inline}}
 {{> layout}}

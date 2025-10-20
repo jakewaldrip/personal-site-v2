@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
 
-  padding-top: 64px;
+  padding-top: 136px;
   padding-bottom: 0px;
 }
 
@@ -32,20 +32,121 @@
   user-select: none;
   vertical-align: middle;
   overflow: hidden;
-  padding-top: 96px;
+  padding-top: 136px;
+}
+
+.projectOneDivider {
+  fill: var(--primary-background-color);
+  transition: fill 400ms ease-in-out;
+  display: block;
+  bottom: -1px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  background-color: transparent;
+  pointer-events: none;
+  user-select: none;
+  vertical-align: middle;
+  overflow: hidden;
+  padding-top: 136px;
+}
+
+.projectTwoDivider {
+  fill: var(--primary-off-background-color);
+  transition: fill 400ms ease-in-out;
+  display: block;
+  bottom: -1px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  background-color: transparent;
+  pointer-events: none;
+  user-select: none;
+  vertical-align: middle;
+  overflow: hidden;
+  padding-top: 136px;
+}
+
+.projectThreeDivider {
+  transition: fill 400ms ease-in-out;
+  display: block;
+  bottom: -1px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  background-color: transparent;
+  pointer-events: none;
+  user-select: none;
+  vertical-align: middle;
+  overflow: hidden;
+  padding-top: 136px;
+}
+
+.waveFooterOne {
+  transition: fill 400ms ease-in-out;
+  fill: rgb(55, 61, 76);
+  /* fill: rgb(244, 246, 249); */
+}
+
+.waveFooterTwo {
+  transition: fill 400ms ease-in-out;
+  fill: rgb(57, 64, 79);
+  /* fill: rgb(247, 249, 251); */
+}
+
+.waveFooterThree {
+  transition: fill 400ms ease-in-out;
+  fill: rgb(59, 66, 82);
+  /* fill: rgb(251, 251, 252); */
 }
 
 .projectOneSection {
   background-color: var(--primary-off-background-color);
-  flex: 1;
   transition:
     background-color 400ms ease-in-out,
     color 400ms ease-in-out,
     border-color 400ms ease-in-out;
   justify-content: center;
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 64px;
+  padding-bottom: 0px;
 }
+
+.projectTwoSection {
+  background-color: var(--primary-background-color);
+  transition:
+    background-color 400ms ease-in-out,
+    color 400ms ease-in-out,
+    border-color 400ms ease-in-out;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 64px;
+  padding-bottom: 0px;
+
+}
+
+.projectThreeSection {
+  background-color: var(--primary-off-background-color);
+  transition:
+    background-color 400ms ease-in-out,
+    color 400ms ease-in-out,
+    border-color 400ms ease-in-out;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 64px;
+  padding-bottom: 0px;
+
+}
+
 
 .projectContainer {
   display: flex;
