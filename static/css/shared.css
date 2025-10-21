@@ -59,3 +59,58 @@ body.theme-transition {
     color 400ms ease-in-out,
     border-color 400ms ease-in-out;
 }
+
+.secondaryButton {
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  border-radius: 0.25em;
+  border: 0.0625em solid var(--secondary-button-border-color);
+  background: none;
+  padding: 0.375em 0.75em;
+  user-select: none;
+  line-height: 1.15;
+  color: var(--primary-main-text-color);
+  transition:
+    color 400ms ease-in-out;
+
+  font-size: 1.375em;
+  margin: 0.4em 0 0.25em;
+  width: fit-content;
+}
+
+.secondaryButton:hover {
+  color: var(--secondary-button-hover-color);
+  border: 0.0625em solid var(--secondary-button-hover-color);
+  cursor: pointer;
+}
+
+.primaryButton {
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  border: none;
+  border-radius: 0.25em;
+  background: none;
+  padding: 0.375em 0.75em;
+  user-select: none;
+  line-height: 1.15;
+  color: var(--primary-button-text-color);
+
+  background-color: var(--primary-button-color);
+  font-size: 1.375em;
+  margin: 0.4em 0 0.25em;
+  width: fit-content;
+}
+
+.primaryButton:hover {
+  background-color: var(--primary-button-hover-color);
+  cursor: pointer;
+}
+

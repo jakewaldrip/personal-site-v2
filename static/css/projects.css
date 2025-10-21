@@ -176,7 +176,7 @@
 
 .projectArtifactContainer {
   width: 50%;
-  height: 360px;
+  height: 384px;
   max-width: 800px;
 }
 
@@ -204,6 +204,31 @@
   align-items: center;
 }
 
+
+.projectTwoArtifactDisplayBox {
+  width: 100%;
+  box-shadow: rgba(15, 17, 21, 0.35) 0px 6px 9px 0px;
+  background-color: var(--primary-background-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.projectTwoArtifactHeader {
+  background-color: var(--primary-off-background-color);
+  width: 100%;
+  padding: 0;
+  height: 10%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .fileName {
   font-size: 1.26562em;
   color: var(--primary-off-text-color);
@@ -221,33 +246,11 @@ pre code {
 
 pre {
   padding-left: 24px;
+  padding-right: 24px;
 }
 
-.secondaryButton {
-  display: inline-flex;
-  align-items: center;
-  text-align: center;
-  text-decoration: none;
-  vertical-align: middle;
-  white-space: nowrap;
-  border-radius: 0.25em;
-  border: 0.0625em solid var(--secondary-button-border-color);
-  background: none;
-  padding: 0.375em 0.75em;
-  user-select: none;
-  line-height: 1.15;
-  color: var(--primary-main-text-color);
-  transition:
-    color 400ms ease-in-out;
-
-  font-size: 1.375em;
-  margin: 0.4em 0 0.25em;
-  width: fit-content;
+.projectTwoButtonContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
 }
-
-.secondaryButton:hover {
-  color: var(--secondary-button-hover-color);
-  border: 0.0625em solid var(--secondary-button-hover-color);
-  cursor: pointer;
-}
-

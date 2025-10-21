@@ -59,23 +59,26 @@ impl<'a> Lexer<'a> {
   <div class="projectContainer">
 
     <div class="projectArtifactContainer">
-      <div class="artifactDisplayBox">
-        <div class="artifactHeader">
+      <div class="projectTwoArtifactDisplayBox">
+        <div class="projectTwoArtifactHeader">
           <p class="fileName">
           lexer.rs
           </p>
         </div>
         <p class="artifactContent">
           <pre><code>
-impl<'a> Lexer<'a> {
-    pub fn new(input: &'a str) -> Self {
-        let chars = input.chars().peekable();
-        Self {
-            input: chars,
-            state: State::None,
-            accumulated_string: String::new(),
-        }
-    }
+pub fn get_owned_rooms() -> Vec<Room> {
+    game::rooms()
+        .values()
+        .filter(|room| {
+            let controller = room.controller();
+            match controller {
+                Some(controller) =>
+                  controller.my(),
+                None => false,
+            }
+        })
+        .collect()
 }
           </code></pre>
         </p>
@@ -87,7 +90,10 @@ impl<'a> Lexer<'a> {
       <p class="projectDesc">
         a plugin intended to bring the spirit of old school runescape into neovim. powered by a blazingly fast Rust backend, batches of your vim keystrokes are processed in the blink of an eye - granting you experience and levels corresponding to different categories of vim motions to track your progress and impress your friends.
       </p>
-      <a class="secondaryButton">Learn More</a>
+      <div class="projectTwoButtonContainer">
+        <a variant="secondary" class="secondaryButton">Learn More</a>
+        <a variant="primary" class="primaryButton" href="https://screeps.com">Screeps</a>
+      </div>
     </div>
 
   </div>
