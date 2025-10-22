@@ -62,7 +62,7 @@ impl<'a> Lexer<'a> {
       <div class="projectTwoArtifactDisplayBox">
         <div class="projectTwoArtifactHeader">
           <p class="fileName">
-          lexer.rs
+          memory_api.rs
           </p>
         </div>
         <p class="artifactContent">
@@ -118,20 +118,21 @@ pub fn get_owned_rooms() -> Vec<Room> {
       <div class="artifactDisplayBox">
         <div class="artifactHeader">
           <p class="fileName">
-          lexer.rs
+          main.rs
           </p>
         </div>
         <p class="artifactContent">
           <pre><code>
-impl<'a> Lexer<'a> {
-    pub fn new(input: &'a str) -> Self {
-        let chars = input.chars().peekable();
-        Self {
-            input: chars,
-            state: State::None,
-            accumulated_string: String::new(),
+impl EventHandler for Bot {
+  async fn message(ctx: Ctx, msg: Message)
+    if channel_matches(&channel_id) {
+        let timestamp = msg.timestamp.time();
+        let hour = timestamp.hour();
+        if hour < START_UTC || hour >= END_UTC {
+            let _ = msg.delete(ctx.http).await;
         }
     }
+  }
 }
           </code></pre>
         </p>
