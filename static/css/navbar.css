@@ -34,9 +34,9 @@
 }
 
 .navBarThemeContainer {
-  position: absolute;
+  position: fixed;
   right: 24px;
-  top: 40%;
+  top: 2.5%;
   transform: translateY(-50%);
   cursor: pointer;
 }

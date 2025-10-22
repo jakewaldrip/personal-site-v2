@@ -1,15 +1,20 @@
 .heroContainer {
+  background-color: var(--primary-background-color);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
-  padding-top: 64px;
+  padding-top: 84px;
   padding-bottom: 0px;
+  transition:
+    background-color 400ms ease-in-out,
+    color 400ms ease-in-out,
+    border-color 400ms ease-in-out;
 }
 
 .heroTitle {
-  font-size: 48px;
+  font-size: 2.167em;
 }
 
 .heroButtonContainer {
@@ -33,9 +38,38 @@
   padding-top: 96px;
 }
 
+.projectFourDivider {
+  fill: var(--primary-off-background-color);
+  display: block;
+  bottom: -1px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  background-color: transparent;
+  pointer-events: none;
+  user-select: none;
+  vertical-align: middle;
+  overflow: hidden;
+  padding-top: 136px;
+}
+
+.waveFooterOne {
+  transition: fill 400ms ease-in-out;
+  fill: var(--wave-footer-one);
+}
+
+.waveFooterTwo {
+  transition: fill 400ms ease-in-out;
+  fill: var(--wave-footer-two);
+}
+
+.waveFooterThree {
+  transition: fill 400ms ease-in-out;
+  fill: var(--wave-footer-three);
+}
+
 .aboutMeContainer {
   background-color: var(--primary-off-background-color);
-  flex: 1;
   transition:
     background-color 400ms ease-in-out,
     color 400ms ease-in-out,

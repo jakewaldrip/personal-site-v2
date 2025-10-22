@@ -1,4 +1,4 @@
-.heroContainer {
+.projectsHeroContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,18 +8,18 @@
   padding-bottom: 0px;
 }
 
-.heroTitle {
+.projectsHeroTitle {
   font-size: 2em;
 }
 
-.heroDesc {
+.projectsHeroDesc {
   font-size: 1.26562em;
   width: 60%;
   text-align: center;
   line-height: 1.5em;
 }
 
-.heroDivider {
+.projectsHeroDivider {
   fill: var(--primary-off-background-color);
   transition: fill 400ms ease-in-out;
   display: block;
@@ -68,6 +68,7 @@
 }
 
 .projectThreeDivider {
+  fill: var(--primary-background-color);
   transition: fill 400ms ease-in-out;
   display: block;
   bottom: -1px;
@@ -82,22 +83,35 @@
   padding-top: 136px;
 }
 
+.projectFourDivider {
+  fill: var(--primary-off-background-color);
+  display: block;
+  bottom: -1px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  background-color: transparent;
+  pointer-events: none;
+  user-select: none;
+  vertical-align: middle;
+  overflow: hidden;
+  padding-top: 136px;
+}
+
+
 .waveFooterOne {
   transition: fill 400ms ease-in-out;
-  fill: rgb(55, 61, 76);
-  /* fill: rgb(244, 246, 249); */
+  fill: var(--wave-footer-one);
 }
 
 .waveFooterTwo {
   transition: fill 400ms ease-in-out;
-  fill: rgb(57, 64, 79);
-  /* fill: rgb(247, 249, 251); */
+  fill: var(--wave-footer-two);
 }
 
 .waveFooterThree {
   transition: fill 400ms ease-in-out;
-  fill: rgb(59, 66, 82);
-  /* fill: rgb(251, 251, 252); */
+  fill: var(--wave-footer-three);
 }
 
 .projectOneSection {
@@ -147,6 +161,23 @@
 
 }
 
+.projectFourSection {
+  background-color: var(--primary-background-color);
+  transition:
+    background-color 400ms ease-in-out,
+    color 400ms ease-in-out,
+    border-color 400ms ease-in-out;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 64px;
+  padding-bottom: 0px;
+
+}
+
+
 
 .projectContainer {
   display: flex;
@@ -190,6 +221,10 @@
   align-items: flex-start;
   height: 100%;
   border-radius: 8px;
+  transition:
+    background-color 400ms ease-in-out,
+    color 400ms ease-in-out,
+    border-color 400ms ease-in-out;
 }
 
 .artifactHeader {
@@ -202,6 +237,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition:
+    background-color 400ms ease-in-out,
+    color 400ms ease-in-out,
+    border-color 400ms ease-in-out;
 }
 
 
@@ -215,6 +254,10 @@
   align-items: flex-start;
   height: 100%;
   border-radius: 8px;
+  transition:
+    background-color 400ms ease-in-out,
+    color 400ms ease-in-out,
+    border-color 400ms ease-in-out;
 }
 
 .projectTwoArtifactHeader {
@@ -227,26 +270,71 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition:
+    background-color 400ms ease-in-out,
+    color 400ms ease-in-out,
+    border-color 400ms ease-in-out;
 }
+
+.projectFourArtifactDisplayBox {
+  width: 100%;
+  box-shadow: rgba(15, 17, 21, 0.35) 0px 6px 9px 0px;
+  background-color: var(--primary-background-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100%;
+  border-radius: 8px;
+  transition:
+    background-color 400ms ease-in-out,
+    color 400ms ease-in-out,
+    border-color 400ms ease-in-out;
+}
+
+.projectFourArtifactHeader {
+  background-color: var(--primary-off-background-color);
+  width: 100%;
+  padding: 0;
+  height: 10%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition:
+    background-color 400ms ease-in-out,
+    color 400ms ease-in-out,
+    border-color 400ms ease-in-out;
+}
+
 
 .fileName {
   font-size: 1.26562em;
   color: var(--primary-off-text-color);
+  transition:
+    color 400ms ease-in-out,
 }
 
 .artifactContent {
   font-family: monospace;
   overflow-x: auto;
+  transition:
+    color 400ms ease-in-out,
 }
 
 pre code {
   font-size: 1.26562em;
   color: var(--primary-off-text-color);
+  transition:
+    color 400ms ease-in-out,
 }
 
 pre {
   padding-left: 24px;
   padding-right: 24px;
+  transition:
+    color 400ms ease-in-out,
 }
 
 .projectTwoButtonContainer {

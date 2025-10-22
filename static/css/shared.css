@@ -1,5 +1,6 @@
 :root {
   --primary-background-color: #ffffff;
+  --primary-lighter-background-color: #fbfbfc;
   --primary-off-background-color: #f8f9fb;
   --primary-main-text-color: #4c566a;
   --primary-button-hover-color: #79b8ca;
@@ -9,6 +10,10 @@
   --divider-color: rgba(216, 222, 233, 1);
   --primary-button-color: #88c0d0;
   --text-hover-color: #5e81ac;
+
+  --wave-footer-one: rgb(244, 246, 249);
+  --wave-footer-two: rgb(247, 249, 251);
+  --wave-footer-three: rgb(251, 251, 252);
 
   --secondary-background-color: #2e3440;
   --secondary-off-background-color: #3b4252;
@@ -20,7 +25,7 @@
 
 [data-theme="dark"] {
   --primary-background-color: #2e3440;
-  /* --primary-background-color: #3b4252; */
+  --primary-lighter-background-color: #3b4252;
   --primary-off-background-color: #292e39;
   --primary-main-text-color: #eceff4;
   --primary-off-text-color: #d8dee9;
@@ -30,6 +35,10 @@
   --divider-color: rgba(216, 222, 233, 0.6);
   --primary-button-color: #88c0d0;
   --text-hover-color: #5e81ac;
+
+  --wave-footer-one: rgb(55, 61, 76);
+  --wave-footer-two: rgb(57, 64, 79);
+  --wave-footer-three: rgb(59, 66, 82);
 
   --secondary-background-color: #ffffff;
   --secondary-off-background-color: #f8f9fb;
