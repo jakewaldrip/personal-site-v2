@@ -18,13 +18,21 @@
   font-size: 1.367em;
   padding: 4px;
   margin: 4px;
-  transition: color 400ms ease-in-out,
+  transition: color 400ms ease-in-out;
 }
 
 .crText {
   font-size: 1em;
   padding: 4px;
   margin: 4px;
-  transition: color 400ms ease-in-out,
+  transition: color 400ms ease-in-out;
 }
 
+.funFact {
+  font-size: .8em;
+  padding: 4px;
+  margin: 8px;
+  transition: color 400ms ease-in-out;
+  font-style: italic;
+  text-align: center;
+}

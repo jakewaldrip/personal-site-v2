@@ -74,5 +74,27 @@
     background-color 400ms ease-in-out,
     color 400ms ease-in-out,
     border-color 400ms ease-in-out;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 24px;
+  padding-bottom: 0px;
 }
 
+.aboutMeContentContainer {
+  width: 90%;
+  max-width: 1200px;
+}
+
+.aboutMeTitle {
+  font-size: 2em;
+  padding-bottom: 12px;
+}
+
+.aboutMeDesc {
+  font-size: 1.26562em;
+  width: 60%;
+  line-height: 1.5em;
+}
