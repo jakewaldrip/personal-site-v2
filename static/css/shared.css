@@ -123,3 +123,10 @@ body.theme-transition {
   cursor: pointer;
 }
 
+@media (max-width: 768px) {
+  .primaryButton, .secondaryButton {
+    font-size: 1.125em;
+    line-height: 1.15em;
+  }
+}
+

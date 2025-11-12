@@ -98,3 +98,26 @@
   width: 60%;
   line-height: 1.5em;
 }
+
+@media (max-width: 768px) {
+  .aboutMeContentContainer {
+    width: 85%;
+    padding: 0 16px;
+  }
+
+  .aboutMeDesc {
+    width: 100%;
+    font-size: 1.15em;
+    line-height: 1.6em;
+  }
+
+  .aboutMeTitle {
+    font-size: 1.75em;
+    line-height: 1.2em;
+  }
+
+  .heroTitle {
+    font-size: 2em;
+    line-height: 1.2em;
+  }
+}

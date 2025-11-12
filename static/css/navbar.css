@@ -58,3 +58,26 @@
   align-items: center;
 }
 
+@media (max-width: 768px) {
+  .navBarContainer {
+    padding: 12px;
+  }
+
+  .navBarLinksContainer {
+    gap: 16px;
+  }
+
+  .navBarLinksContainer a {
+    font-size: 18px;
+    padding: 8px 12px;
+  }
+
+  .navBarThemeContainer {
+    right: 12px;
+  }
+
+  .navBarThemeContainer {
+    top: 3%
+  }
+}
+

@@ -15,7 +15,7 @@
 .projectsHeroDesc {
   font-size: 1.26562em;
   width: 60%;
-  text-align: center;
+  text-align: left;
   line-height: 1.5em;
 }
 
@@ -218,7 +218,7 @@
   }
 
   .projectTextContainer {
-    max-width: 67%;
+    max-width: 85%;
   }
 
   .projectArtifactContainer {
@@ -357,4 +357,86 @@ pre {
   display: flex;
   flex-direction: row;
   gap: 16px;
+}
+
+@media (max-width: 768px) {
+  /* Full-width code containers */
+  .projectArtifactContainer {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    min-height: 200px;
+    max-height: 384px;
+    margin-left: -16px;
+    margin-right: -16px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  /* Mobile code display optimization */
+  .artifactContent {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+  }
+
+  /* Mobile-friendly code styling */
+  pre code {
+    font-size: 1.075em;
+    line-height: 1.4;
+  }
+
+  /* Reduced padding for mobile */
+  pre {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  /* Custom scrollbar styling */
+  .artifactContent::-webkit-scrollbar {
+    height: 4px;
+  }
+
+  .artifactContent::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .artifactContent::-webkit-scrollbar-thumb {
+    background-color: var(--primary-off-text-color);
+    border-radius: 2px;
+    opacity: 0.6;
+  }
+
+  .projectsHeroTitle {
+    font-size: 1.75em;
+    line-height: 1.2em;
+  }
+
+  .projectsHeroDesc {
+    width: 80%;
+    font-size: 1.25em;
+    line-height: 1.6em;
+    padding: 0 16px;
+  }
+
+  .artifactDisplayBox {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .projectTwoArtifactDisplayBox {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .projectFourArtifactDisplayBox {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .projectTitle {
+    font-size: 1.75em;
+    line-height: 1.2em;
+  }
 }
