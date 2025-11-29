@@ -85,6 +85,23 @@
 
 .projectFourDivider {
   fill: var(--primary-off-background-color);
+  transition: fill 400ms ease-in-out;
+  display: block;
+  bottom: -1px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  background-color: transparent;
+  pointer-events: none;
+  user-select: none;
+  vertical-align: middle;
+  overflow: hidden;
+  padding-top: 136px;
+}
+
+
+.projectFiveDivider {
+  fill: var(--primary-off-background-color);
   display: block;
   bottom: -1px;
   left: 0px;
@@ -158,7 +175,6 @@
 
   padding-top: 64px;
   padding-bottom: 0px;
-
 }
 
 .projectFourSection {
@@ -174,9 +190,22 @@
 
   padding-top: 64px;
   padding-bottom: 0px;
-
 }
 
+.projectFiveSection {
+  background-color: var(--primary-off-background-color);
+  transition:
+    background-color 400ms ease-in-out,
+    color 400ms ease-in-out,
+    border-color 400ms ease-in-out;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 64px;
+  padding-bottom: 0px;
+}
 
 
 .projectContainer {

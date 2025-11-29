@@ -183,12 +183,57 @@ pub fn get_random_fact() -> String {
 
   </div>
 
-  <svg viewBox="0 0 1920 250" xmlns="http://www.w3.org/2000/svg" class="projectFourDivider">
+  <svg class="projectFourDivider" viewBox="0 0 1440 47">
+    <path d="M0 .058c117.505 18.386 269.602 22.114 456.294 11.185C562.076 5.051 730.784.911 885.297 3.273 1157.177 7.432 1386.981 21.329 1440 38.39v8.55H0V.058z"></path>
+  </svg>
+</section>
+
+<section class="projectFiveSection" id="projectFiveSection">
+  <div class="projectContainer">
+
+    <div class="projectTextContainer">
+      <h1 class="projectTitle">rnvm</h1>
+      <p class="projectDesc">
+        a node version manager, but significantly more performant. after profiling my slow shell start up, i noticed `nvm` adding over
+        <i>one thousand milliseconds</i> to my start-up; so i wrote my own in rust
+      </p>
+      <a class="secondaryButton" href="https://github.com/jakewaldrip/rnvm">Learn More</a>
+    </div>
+
+    <div class="projectArtifactContainer">
+      <div class="artifactDisplayBox">
+        <div class="artifactHeader">
+          <p class="fileName">
+          main.rs
+          </p>
+        </div>
+        <p class="artifactContent">
+          <pre><code>
+match &args.command {
+    Some(Commands::Install) => {
+        handle_install_command(
+            &*install_client,
+            &mut cmd
+        );
+    }
+    Some(Commands::Current) => {
+        handle_current_command(&mut cmd);
+    }
+}
+          </code></pre>
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <svg viewBox="0 0 1920 250" xmlns="http://www.w3.org/2000/svg" class="projectFiveDivider">
     <path d="M1920 250H0V0s126.707 78.536 349.975 80.05c177.852 1.203 362.805-63.874 553.803-63.874 290.517 0 383.458 57.712 603.992 61.408 220.527 3.696 278.059-61.408 412.23-17.239" class="waveFooterOne"></path>
     <path d="M1920 144s-467.917 116.857-1027.243-17.294C369.986 1.322 0 45.578 0 45.578V250h1920V144z" class="waveFooterTwo"></path>
     <path d="M0 195.553s208.547-75.581 701.325-20.768c376.707 41.908 520.834-67.962 722.545-67.962 222.926 0 311.553 83.523 496.129 86.394V250H0v-54.447z" class="waveFooterThree"></path>
   </svg>
 </section>
+
 
 
 {{/inline}}
